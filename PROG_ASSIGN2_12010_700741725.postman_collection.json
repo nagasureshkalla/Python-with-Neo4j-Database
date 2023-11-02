@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "65a89432-885c-4df7-a5ff-fb58855b0f8c",
+		"name": "PROG_ASSIGN2_12010_700741725",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7031000"
+	},
+	"item": [
+		{
+			"name": "GET_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/imdb"
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"title\": \"Suresh Movie\",\n            \"description\": \"No Description\",\n            \"rating\": 10,\n            \"revenue\": 500.02\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/imdb"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/imdb/Suresh Movie"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"title\": \"Suresh Movie\",\n            \"description\": \"Just Had Some Description on it\",\n            \"rating\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/imdb/Suresh Movie"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/imdb/Suresh Movie"
+			},
+			"response": []
+		}
+	]
+}
