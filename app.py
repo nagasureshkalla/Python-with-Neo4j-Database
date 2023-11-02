@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 uri = "neo4j+ssc://5032a480.databases.neo4j.io"
 username = "neo4j"
-password = "cmnLb07p6zm5BprxOogsaTzLvuJfun6DVCqMqUmcfSs"
+password = "password"
 driver=GraphDatabase.driver(uri, auth=(username, password))
 
 
